@@ -19,7 +19,7 @@ export default function SEO({ title, description }: SEOProps) {
       <meta property="og:url" content="https://mantglo.com" />
       <meta
         property="og:image"
-        content="https://mantglo.com/og-image.jpg"
+        content="https://mantglo.com/og-image.svg"
       />
 
       {/* SEO extra */}
