@@ -230,7 +230,9 @@ function Inicio() {
             <motion.img
               key={i}
               src={img}
-              alt={`taller${i}`}
+              alt={`Trabajo de mecánica diésel y mantenimiento industrial ${i + 1}`}
+              loading="lazy"
+              decoding="async"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
@@ -298,8 +300,7 @@ function Inicio() {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg')",
+            backgroundImage: `url(${images.image3})`,
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 to-black/40"></div>
