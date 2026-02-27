@@ -7,9 +7,6 @@ import {
   Battery,
 } from "lucide-react";
 import React from "react";
-import maquinaria from "../assets/maquinariapesada.png";
-import electricidad from "../assets/electricidadbaterias.png";
-
 const servicios = [
   {
     categoria: "Hidráulica",
@@ -53,7 +50,7 @@ const servicios = [
         className:
           "w-8 h-8 text-yellow-400 group-hover:translate-y-1 group-hover:scale-110 transition-transform duration-300",
       }),
-    bg: `${maquinaria}`,
+    bg: "https://images.pexels.com/photos/162540/excavators-construction-site-build-construction-work-162540.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=720&w=1280&fm=webp",
     items: [
       "Grúas y telehandlers",
       "Bulldozers y retroexcavadoras",
@@ -103,7 +100,7 @@ const servicios = [
         className:
           "w-8 h-8 text-yellow-400 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300",
       }),
-    bg: `${electricidad}`,
+    bg: "https://images.pexels.com/photos/4254186/pexels-photo-4254186.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=720&w=1280&fm=webp",
     items: [
       "Sistemas eléctricos completos",
       "Pruebas y reemplazo de baterías",
