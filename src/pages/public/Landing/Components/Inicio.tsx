@@ -129,6 +129,8 @@ function Inicio() {
                 src={card.img}
                 alt={card.title}
                 className="w-full h-36 sm:h-44 object-contain rounded-lg mb-4"
+                loading="lazy"
+                decoding="async"
               />
               <h2
                 className="font-bold text-lg sm:text-xl text-[#0D1B2A] flex items-center justify-center gap-2"
