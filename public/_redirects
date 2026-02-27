@@ -1,0 +1,4 @@
+# Canonical host and protocol redirects (301)
+http://mantglo.com/* https://mantglo.com/:splat 301!
+http://www.mantglo.com/* https://mantglo.com/:splat 301!
+https://www.mantglo.com/* https://mantglo.com/:splat 301!

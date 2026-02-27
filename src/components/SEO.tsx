@@ -9,7 +9,8 @@ interface SEOProps {
 const siteUrl = "https://mantglo.com";
 
 export default function SEO({ title, description, path = "/" }: SEOProps) {
-  const canonicalUrl = `${siteUrl}${path}`;
+  const normalizedPath = path === "/" ? "/" : `/${path.replace(/^\/+|\/+$/g, "")}/`;
+  const canonicalUrl = `${siteUrl}${normalizedPath}`;
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -37,6 +38,7 @@ export default function SEO({ title, description, path = "/" }: SEOProps) {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Mantglo SAS" />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={`${siteUrl}/og-image.svg`} />
       <meta property="og:locale" content="es_CO" />
