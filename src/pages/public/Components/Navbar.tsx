@@ -13,7 +13,7 @@ function Navbar() {
       <div className="w-full h-24 flex justify-between items-center px-6 md:px-10 max-w-[1400px] mx-auto">
         <div className="flex items-center">
           <Link to="/" aria-label="Ir al inicio">
-            <img src={logo} alt="Logo Mantglo" className="h-12 md:h-14" loading="eager" decoding="async" width={160} height={56} />
+            <img src={logo} alt="Logo Mantglo" className="h-12 md:h-14" loading="eager" decoding="async" width={100} height={80} />
           </Link>
         </div>
 

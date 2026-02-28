@@ -17,7 +17,7 @@ export default function SEO({ title, description, path = "/", preloadImage }: SE
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Mantglo SAS",
-    image: `${siteUrl}/og-image.svg`,
+    image: `${siteUrl}/og-image.webp`,
     url: siteUrl,
     telephone: "+57 313 584 3579",
     address: {
@@ -41,13 +41,13 @@ export default function SEO({ title, description, path = "/", preloadImage }: SE
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Mantglo SAS" />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:image" content={`${siteUrl}/og-image.svg`} />
+      <meta property="og:image" content={`${siteUrl}/og-image.webp`} />
       <meta property="og:locale" content="es_CO" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${siteUrl}/og-image.svg`} />
+      <meta name="twitter:image" content={`${siteUrl}/og-image.webp`} />
 
       <meta name="robots" content="index, follow" />
       <meta name="author" content="Mantglo SAS" />
