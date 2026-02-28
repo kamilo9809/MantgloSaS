@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/logoMantglo.png";
+import logo from "/public/logoMantglo.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false);

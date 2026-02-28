@@ -1,32 +1,35 @@
+
+import image1 from '../assets/image 1.webp'
+import image2 from '../assets/image 2.webp'
+import image3 from '../assets/image 3.webp'
+import image4 from '../assets/image 4.webp'
+import image5 from '../assets/image 5.webp'
+import image8 from '../assets/image 8.webp'
+import image9 from '../assets/image 9.webp'
+import image10 from '../assets/image 10.webp'
+import image11 from '../assets/image 11.webp'
+import logo from '../assets/logoMantglo.webp'
+import img1 from '../assets/img1.webp'
+import img2 from '../assets/img2.webp'
+import img3 from '../assets/img3.webp'
+
 const images = {
-  image1:
-    "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1200&fm=webp",
-  image2:
-    "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1200&fm=webp",
-  image3:
-    "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1000&w=1600&fm=webp",
-  image4:
-    "https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1200&fm=webp",
-  image5:
-    "https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1200&fm=webp",
-  image8:
-    "https://images.pexels.com/photos/1112080/pexels-photo-1112080.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1200&fm=webp",
-  image9:
-    "https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1200&fm=webp",
-  image10:
-    "https://images.pexels.com/photos/3846205/pexels-photo-3846205.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1200&fm=webp",
-  image11:
-    "https://images.pexels.com/photos/4489708/pexels-photo-4489708.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1200&fm=webp",
-  logo: "/logoMantglo.png",
-};
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image8,
+    image9,
+    image10,
+    image11,
+    logo
+}
 
 const icons = {
-  img1:
-    "https://images.pexels.com/photos/8985450/pexels-photo-8985450.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=320&w=480&fm=webp",
-  img2:
-    "https://images.pexels.com/photos/161913/transport-truck-logistics-transportation-161913.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=320&w=480&fm=webp",
-  img3:
-    "https://images.pexels.com/photos/162568/engine-repair-vehicle-auto-162568.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=320&w=480&fm=webp",
-};
+    img1,
+    img2,
+    img3
+}
 
 export { images, icons };
