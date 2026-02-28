@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Youtube, Phone, MapPin, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "/public/logoMantglo.png";
+import logo from "/logoMantglo.png";
 
 function Footer() {
   return (
@@ -8,7 +8,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         <div className="flex flex-col items-start sm:items-center md:items-start text-center sm:text-left md:text-left">
           <div className="w-32 py-3 bg-[#FFC107] flex items-center justify-center rounded-lg font-bold text-black text-lg">
-            <img src={logo} alt="Logo Mantglo" className="max-h-12 object-contain" loading="lazy" decoding="async" />
+            <img src={logo} alt="Logo Mantglo" className="max-h-12 object-contain" loading="lazy" decoding="async" width={160} height={48} />
           </div>
           <p className="text-sm text-gray-300 mt-3 max-w-xs">
             Expertos en reparación de motores diésel y maquinaria pesada.

@@ -4,11 +4,12 @@ interface SEOProps {
   title: string;
   description: string;
   path?: string;
+  preloadImage?: string;
 }
 
 const siteUrl = "https://mantglo.com";
 
-export default function SEO({ title, description, path = "/" }: SEOProps) {
+export default function SEO({ title, description, path = "/", preloadImage }: SEOProps) {
   const normalizedPath = path === "/" ? "/" : `/${path.replace(/^\/+|\/+$/g, "")}/`;
   const canonicalUrl = `${siteUrl}${normalizedPath}`;
 
@@ -33,8 +34,8 @@ export default function SEO({ title, description, path = "/" }: SEOProps) {
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
+      {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchPriority="high" />}
 
-      {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
@@ -43,7 +44,6 @@ export default function SEO({ title, description, path = "/" }: SEOProps) {
       <meta property="og:image" content={`${siteUrl}/og-image.svg`} />
       <meta property="og:locale" content="es_CO" />
 
-      {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />

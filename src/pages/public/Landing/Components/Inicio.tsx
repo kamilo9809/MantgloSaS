@@ -48,9 +48,18 @@ function Inicio() {
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="relative h-[85vh] sm:h-[70vh] md:h-[90vh] flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${images.image3})` }}
+        className="relative h-[85vh] sm:h-[70vh] md:h-[90vh] flex items-center justify-center"
       >
+        <img
+          src={images.image3}
+          alt="Mantenimiento industrial y mecánica diésel en taller Mantglo"
+          className="absolute inset-0 h-full w-full object-cover"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          width={1920}
+          height={1080}
+        />
         <div className="absolute inset-0 bg-[#0D1B2A]/80"></div>
         <motion.div
           initial={{ y: 80, opacity: 0 }}
@@ -131,6 +140,8 @@ function Inicio() {
                 className="w-full h-36 sm:h-44 object-contain rounded-lg mb-4"
                 loading="lazy"
                 decoding="async"
+                width={320}
+                height={176}
               />
               <h2
                 className="font-bold text-lg sm:text-xl text-[#0D1B2A] flex items-center justify-center gap-2"
@@ -235,6 +246,8 @@ function Inicio() {
               alt={`Trabajo de mecánica diésel y mantenimiento industrial ${i + 1}`}
               loading="lazy"
               decoding="async"
+              width={360}
+              height={224}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
